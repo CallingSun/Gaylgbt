@@ -87,4 +87,3 @@ Hỗ trợ chức năng tìm kiếm và thống kê doanh thu để đánh giá 
 +Thuộc tính: vector<Customer> customers, vector<Employee> employees, vector<Room> rooms, vector<Invoice> invoices
 
 +Phương thức: load/save file, add/edit/delete cho từng loại, tìm kiếm, thống kê
->>>>>>> cf23735 (Code lan 1)
