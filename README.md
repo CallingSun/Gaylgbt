@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Gaylgbt
 =======
 1. Phát biểu bài toán và lý do chọn
