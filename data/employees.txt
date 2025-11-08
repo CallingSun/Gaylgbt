@@ -1,0 +1,3 @@
+089999999999,Tran Thi Dan,0901112222,lamo@gmail.com,Manager,1200
+077777777777,Pham Thi Phuong Dung,0912223333,sktt1@gmail.com,Receptionist,800
+01222031031,Pham Ba loc,11022131331,lmao@cpp.com,Manager,1000

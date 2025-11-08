@@ -1,0 +1,4 @@
+R101,Single,180,1
+R102,Double,270,1
+R203,Family,450,1
+R304,Double,300,0
