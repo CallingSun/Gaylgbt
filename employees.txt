@@ -1,0 +1,2 @@
+E001,Tran Van C,0901234567,c@example.com,Manager,1200.00
+E002,Pham Thi D,0912345678,d@example.com,Receptionist,800.00

@@ -1,0 +1,3 @@
+C001,Nguyen Van A,0123456789,a@example.com,1990-01-01,Hanoi
+C002,Le Thi B,0981122334,b@example.com,1995-05-20,Ho Chi Minh
+C003 ,Lmao,0391313139,c@example.com,2006-02-05,Dien Bien
