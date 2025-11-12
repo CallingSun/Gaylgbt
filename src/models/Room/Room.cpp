@@ -12,23 +12,35 @@ Room::Room(const std::string &roomId,
     }
 
 std::string Room::getRoomId() const {
-    return roomId; 
+    return roomId;
+}
+
+void Room::setRoomId(const std::string &id) {
+    roomId = id;
 }
 
 std::string Room::getType() const {
-    return type; 
+    return type;
+}
+
+void Room::setType(const std::string &t) {
+    type = t;
 }
 
 double Room::getPrice() const {
-    return price; 
+    return price;
 }
 
-bool Room::isAvailable() const { 
-    return available; 
+void Room::setPrice(double p) {
+    price = p;
+}
+
+bool Room::isAvailable() const {
+    return available;
 }
 
 void Room::setAvailable(bool value) {
-    available = value; 
+    available = value;
 }
 
 std::string Room::toCSV() const {

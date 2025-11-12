@@ -18,11 +18,13 @@ public:
             const std::string &address);
 
     std::string getBirthdate() const;
-    
+    void setBirthdate(const std::string &date);
+
     std::string getAddress() const;
+    void setAddress(const std::string &addr);
 
     std::string toCSV() const override;
-    
+
     void fromCSV(const std::string &line) override;
 };
 

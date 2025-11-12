@@ -16,11 +16,19 @@ Employee::Employee(const std::string &cccd,
     }//Hàm tạo nhân viên
 
 std::string Employee::getPosition() const {
-    return position; 
+    return position;
+}
+
+void Employee::setPosition(const std::string &pos) {
+    position = pos;
 }
 
 double Employee::getSalary() const {
-    return salary; 
+    return salary;
+}
+
+void Employee::setSalary(double sal) {
+    salary = sal;
 }
 
 std::string Employee::toCSV() const {

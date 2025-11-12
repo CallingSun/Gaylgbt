@@ -1,4 +1,5 @@
-R101,Single,180,1
-R102,Double,270,1
-R203,Family,450,1
-R304,Double,300,0
+R001,Double,250,0
+R002,Family,250,0
+R003,Double,180,1
+R004,Deluxe,50,1
+R005,Standard,30,1

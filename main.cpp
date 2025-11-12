@@ -1,5 +1,6 @@
 #include "manager/HotelManager.h"
-#include <iostream> 
+#include <iostream>
+#include <cstdlib>
 
 int main() {
     std::ios_base::sync_with_stdio(false);
@@ -7,6 +8,6 @@ int main() {
 
     HotelManager hm("data");
     hm.runConsole();
-    
+
     return 0;
 }

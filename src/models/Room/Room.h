@@ -18,8 +18,11 @@ public:
         bool available);
 
     std::string getRoomId() const;
+    void setRoomId(const std::string &id);
     std::string getType() const;
+    void setType(const std::string &t);
     double getPrice() const;
+    void setPrice(double p);
     bool isAvailable() const;
 
     void setAvailable(bool value);

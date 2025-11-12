@@ -13,11 +13,19 @@ Customer::Customer(const std::string &cccd, const std::string &name,
     }//Hàm tạo khách hàng
 
 std::string Customer::getBirthdate() const {
-    return birthdate; 
+    return birthdate;
+}
+
+void Customer::setBirthdate(const std::string &date) {
+    birthdate = date;
 }
 
 std::string Customer::getAddress() const {
-    return address; 
+    return address;
+}
+
+void Customer::setAddress(const std::string &addr) {
+    address = addr;
 }
 
 std::string Customer::toCSV() const {

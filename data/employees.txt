@@ -1,3 +1,7 @@
-089999999999,Tran Thi Dan,0901112222,lamo@gmail.com,Manager,1200
-077777777777,Pham Thi Phuong Dung,0912223333,sktt1@gmail.com,Receptionist,800
-01222031031,Pham Ba loc,11022131331,lmao@cpp.com,Manager,1000
+012911291211,Nguyen The Tu,02821233311,tuht@gmail.com,Receptionist,430
+011129800921,Antony ,0932102122,saygex69@gmail.com,Empolyee,360
+031306290312,Hoang Minh Thang,012231330112,gengunguvl@gmail.com,Manager,200
+093122309991,Ko bt nua,092122231,khurunghoa@gmail.com,Manager,120
+012302900321,Ban Doan Xem,09458112923,lmaogg@gmail.com,Chef,100
+011207891220,May con ga ,0812233119,hai@gmail.com,Housekeeper,120
+098225921212,Chuong Duc Khai Hoan,08213312231,mayconga@gmail.com,Chef,100

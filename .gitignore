@@ -1,5 +1,6 @@
 # Build directories and artifacts
 build/
+dist/
 *.exe
 *.obj
 *.o
@@ -8,6 +9,8 @@ build/
 *.dll
 *.so
 *.dylib
+*.pdb
+*.ilk
 
 # CMake
 CMakeFiles/
@@ -15,21 +18,34 @@ CMakeCache.txt
 cmake_install.cmake
 Makefile
 *.cmake
+CTestTestfile.cmake
 
 # IDE and editor files
 .vscode/
 .idea/
+.vs/
 *.swp
 *.swo
 *~
 .DS_Store
+*.user
+*.VC.db
 
 # Temporary files
 *.tmp
 *.bak
 *.log
+*.out
 
 # OS-specific files
 Thumbs.db
 .DS_Store
+.AppleDouble
+.LSOverride
 
+# Ninja build system
+.ninja_deps
+.ninja_log
+
+# Keep data directory tracked (contains CSV files)
+# !data/

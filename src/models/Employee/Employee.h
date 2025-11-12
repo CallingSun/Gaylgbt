@@ -18,11 +18,13 @@ public:
             double salary);
 
     std::string getPosition() const;
-    
+    void setPosition(const std::string &pos);
+
     double getSalary() const;
+    void setSalary(double sal);
 
     std::string toCSV() const override;
-    
+
     void fromCSV(const std::string &line) override;
 };
 
