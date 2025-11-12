@@ -33,6 +33,10 @@ Room (Phòng - Độc Lập)
 Invoice (Hóa Đơn - Độc Lập)
 
 HotelManager (Lớp Quản Lý Chính - Độc Lập)
+
+Account (Tài Khoản - Độc Lập)
+
+AuthManager (Quản Lý Xác Thực - Độc Lập)
 ```
 
 ### Mô Tả Chi Tiết Các Lớp
