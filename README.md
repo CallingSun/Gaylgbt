@@ -491,9 +491,12 @@ Dự án này là một phần của bài tập giáo dục về hệ thống qu
 ## Q&A
 **Tại sao lại là std:**
 Bình thường nếu như ta chỉ code trong cùng 1 file (single code file) thì việc sử dụng using namespace std; là không vấn đề gì. Nhưng khi ta code trong nhiều file (multi code file) thì việc sử dụng using namespace std; sẽ dễ gây ra lỗi biến cục bộ. Vì vậy ta phải sử dụng std:: để tránh lỗi.
+
 **Tại sao các hàm lại đặt tên bằng tiếng Anh**
 Cuộc sống đơn giản là khi bạn biết hệ thống nước ngoài dùng thế nào :DD
+
 **Hùng có bị gay lgbt không?**
 Chắc chắn là có
+
 **Nếu cô Hương đọc đến đây thì em nể cô thật đấy**
 ## FROM LẤY GIÓ BẰNG TURBO WITH LOVE
