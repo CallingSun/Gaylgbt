@@ -277,13 +277,15 @@ cd "..\..\HotelMini"; .\build\bin\HotelMini.exe
 
 ### Hệ Thống Xác Thực và Vai Trò
 
-Khi khởi động chương trình, bạn sẽ thấy **Menu Đăng Nhập/Đăng Ký**:
+Khi khởi động chương trình, bạn sẽ thấy **Menu Chính**:
 
 ```
--- DANG NHAP / DANG KY --
+=== QUAN LY HOTEL MINI ===
 1. Dang nhap          (Đăng Nhập)
 2. Dang ky            (Đăng Ký)
-0. Thoat              (Thoát)
+3. Doi mat khau       (Đổi Mật Khẩu)
+4. Quen mat khau      (Quên Mật Khẩu)
+0. Thoat chuong trinh (Thoát Chương Trình)
 ```
 
 #### Đăng Nhập
@@ -294,6 +296,25 @@ Khi khởi động chương trình, bạn sẽ thấy **Menu Đăng Nhập/Đăn
 - Nhập tên đăng nhập, mật khẩu và CCCD
 - **Tự Động Nâng Cấp Nhân Viên**: Nếu CCCD khớp với nhân viên trong hệ thống, tài khoản sẽ tự động được tạo với vai trò **Nhân Viên (1)**
 - Nếu CCCD khớp với khách hàng hoặc không tồn tại, tài khoản sẽ được tạo với vai trò **Khách Hàng (2)**
+
+#### Đổi Mật Khẩu (Option 3)
+- **Yêu cầu**: Phải đăng nhập trước
+- **Áp dụng cho**: Nhân Viên (Vai Trò 1) và Khách Hàng (Vai Trò 2)
+- **Quy trình**:
+  1. Nhập mật khẩu hiện tại (xác minh)
+  2. Nhập mật khẩu mới
+  3. Hệ thống xác thực mật khẩu cũ và cập nhật mật khẩu mới
+  4. Hiển thị thông báo thành công hoặc lỗi
+
+#### Quên Mật Khẩu (Option 4)
+- **Yêu cầu**: KHÔNG cần đăng nhập
+- **Áp dụng cho**: Nhân Viên (Vai Trò 1) và Khách Hàng (Vai Trò 2) **KHÔNG áp dụng cho Admin (Vai Trò 0)**
+- **Quy trình**:
+  1. Nhập tên đăng nhập
+  2. Nhập CCCD (xác minh danh tính)
+  3. Hệ thống xác thực CCCD khớp với tài khoản
+  4. Mật khẩu được đặt lại thành tên đăng nhập
+  5. Hiển thị thông báo thành công hoặc lỗi
 
 #### Tài Khoản Mặc Định
 - **Tên đăng nhập**: `admin`
@@ -474,10 +495,11 @@ Các tính năng đã được triển khai:
 - ✅ Tìm kiếm nâng cao theo khoảng ngày (khách hàng theo ngày sinh, hóa đơn theo ngày nhận/trả/khoảng ngày)
 - ✅ Thống kê nâng cao (doanh thu theo khoảng ngày, số hóa đơn theo nhân viên, top nhân viên theo lương)
 - ✅ Chức năng sửa thông tin (khách hàng, nhân viên, phòng)
+- ✅ Chức năng đổi mật khẩu (Đổi Mật Khẩu) - Yêu cầu đăng nhập, áp dụng cho Nhân Viên (Vai Trò 1) và Khách Hàng (Vai Trò 2)
+- ✅ Chức năng quên mật khẩu (Quên Mật Khẩu) - Không yêu cầu đăng nhập, áp dụng cho Nhân Viên (Vai Trò 1) và Khách Hàng (Vai Trò 2), reset mật khẩu về tên đăng nhập
 
 Các tính năng có thể cải tiến thêm:
 - Mã hóa mật khẩu (hiện tại lưu dạng văn bản cho mục đích demo sử dụng sha256 với c++ hoặc bycryt)
-- Thêm chức năng quên mật khẩu (hiện tại chỉ reset về tên đăng nhập)
 - Thêm chức năng đặt phòng trực tiếp cho khách hàng
 - Thêm chức năng chấm công cho nhân viên
 - Thêm chức năng tính lương tự động

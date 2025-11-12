@@ -644,15 +644,34 @@ void HotelManager::homeMenu() {
         }
 
         else if (c == 3) {
-            // Change password (not for admin)
+            // Change password - requires login
             std::cout << "Vui long dang nhap truoc.\n";
             std::cout << "Nhan Enter de tiep tuc..." << std::flush;
             std::cin.ignore();
         }
 
         else if (c == 4) {
-            // Forgot password (not for admin)
-            std::cout << "Vui long dang nhap truoc.\n";
+            clearScreen();
+            std::cout << "\n---- QUEN MAT KHAU ----\n\n";
+
+            std::string username, cccd;
+            std::cout << "Nhap ten dang nhap: " << std::flush;
+            std::getline(std::cin, username);
+            std::cout << "Nhap CCCD: " << std::flush;
+            std::getline(std::cin, cccd);
+
+            // Kiểm tra xem tài khoản có tồn tại và có phải là tài khoản khách hàng hay nhân viên không
+            Account* acc = authManager.findAccountByUsername(username);
+            if (acc == nullptr) {
+                std::cout << "Ten dang nhap khong ton tai.\n";
+            } else if (acc->getRole() != 1 && acc->getRole() != 2) {
+                std::cout << "Tai khoan nay khong the su dung tinh nang nay.\n";
+            } else if (authManager.forgotPassword(username, cccd)) {
+                std::cout << "Mat khau da duoc dat lai thanh ten dang nhap.\n";
+                std::cout << "Vui long dang nhap lai voi mat khau moi.\n";
+            } else {
+                std::cout << "CCCD khong khop voi ten dang nhap.\n";
+            }
             std::cout << "Nhan Enter de tiep tuc..." << std::flush;
             std::cin.ignore();
         }
@@ -694,7 +713,7 @@ void HotelManager::staffMainMenu() {
         } else if (c == 2) {
             invoiceMenu();
         } else if (c == 3) {
-            // Change password
+            // Đổi mật khẩu
             std::string oldPass, newPass;
             std::cout << "Nhap mat khau cu: " << std::flush;
             std::getline(std::cin, oldPass);
@@ -709,7 +728,7 @@ void HotelManager::staffMainMenu() {
             std::cout << "Nhan Enter de tiep tuc..." << std::flush;
             std::cin.ignore();
         } else if (c == 4) {
-            // Forgot password
+            // Quên mật khẩu
             std::string cccd;
             std::cout << "Nhap CCCD: " << std::flush;
             std::getline(std::cin, cccd);
@@ -758,7 +777,7 @@ void HotelManager::customerMainMenu() {
         } else if (c == 2) {
             viewCustomerInvoices();
         } else if (c == 3) {
-            // Change password
+            //Đổi mk
             std::string oldPass, newPass;
             std::cout << "Nhap mat khau cu: " << std::flush;
             std::getline(std::cin, oldPass);
@@ -773,7 +792,7 @@ void HotelManager::customerMainMenu() {
             std::cout << "Nhan Enter de tiep tuc..." << std::flush;
             std::cin.ignore();
         } else if (c == 4) {
-            // Forgot password
+            // Quên mk
             std::string cccd;
             std::cout << "Nhap CCCD: " << std::flush;
             std::getline(std::cin, cccd);

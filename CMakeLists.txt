@@ -8,6 +8,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
+# Add UTF-8 support for MinGW
+if (MINGW)
+    add_compile_options(-finput-charset=UTF-8 -fexec-charset=UTF-8)
+endif()
+
 file(GLOB_RECURSE SRC "src/*.cpp")
 
 add_executable(HotelMini main.cpp ${SRC})
